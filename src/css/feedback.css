@@ -1,0 +1,61 @@
+@import url('./variables.css');
+
+.feedback-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 600px;
+  padding-bottom: 20px;
+  border: 1px solid var(--color);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedback,
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.feedback-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: var(--color);
+  color: #000;
+  width: 100%;
+
+  text-align: center;
+}
+
+.feedback-buttons-list,
+.statistics-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-mood {
+  padding: 10px 20px;
+  border: 1px solid var(--color);
+  text-transform: capitalize;
+
+  transition: background 0.1s ease-in, color 0.1s ease-in;
+  font-weight: 600;
+}
+
+.button-mood:hover {
+  background: var(--color);
+  color: #000;
+}
+
+.statistics-title {
+  text-align: center;
+}
