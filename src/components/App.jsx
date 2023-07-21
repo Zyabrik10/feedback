@@ -31,6 +31,8 @@ export const App = () => {
       case 'neutral':
         setNeutral(neutral + 1);
         break;
+      default:
+        console.log('Default');
     }
   };
 
